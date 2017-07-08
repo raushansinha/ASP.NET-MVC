@@ -1,0 +1,9 @@
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\DAL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\DAL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\BOL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\EntityFramework.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\BOL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\bin\Debug\EntityFramework.xml
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\obj\Debug\DAL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\DAL\obj\Debug\DAL.pdb

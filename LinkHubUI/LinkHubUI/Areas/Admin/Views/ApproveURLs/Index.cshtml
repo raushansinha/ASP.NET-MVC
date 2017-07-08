@@ -1,0 +1,110 @@
+﻿@model IEnumerable<BOL.tbl_Url>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    function ConfirmApprove() {
+        return confirm('Are you sure you want to Approve?')
+    }
+
+    function ConfirmReject() {
+        return confirm('Are you sure you want to Reject?')
+    }
+</script>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+<h2>Manage URls</h2>
+@if (TempData["msg"] != null)
+{
+    <h3>
+        @TempData["Msg"].ToString();
+    </h3>
+}
+<p>
+    @if (ViewBag.Status == "P")
+    {
+        <b>@Html.ActionLink("Pending Urls", "Index", new { Status = "P" })</b>
+    }
+    else
+    {
+        @Html.ActionLink("Pending Urls", "Index", new { Status = "P" })
+    }
+    |
+    @if (ViewBag.Status == "A")
+    {
+        <b>@Html.ActionLink("Approved Urls", "Index", new { Status = "A" })</b>
+    }
+    else
+    {
+        @Html.ActionLink("Approved Urls", "Index", new { Status = "A" })
+    }
+    |
+    @if (ViewBag.Status == "R")
+    {
+        <b>@Html.ActionLink("Rejected Urls", "Index", new { Status = "R" })</b>
+    }
+    else
+    {
+        @Html.ActionLink("Rejected Urls", "Index", new { Status = "R" })
+    }
+
+   
+</p>
+<table class="table">
+    <tr>
+        <th>Approve/Reject</th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrlTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Url)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrlDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsApproved)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbl_Category.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbl_User.UserEmail)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Approve", "Approve", new { id = item.UrlId}, new { onClick="return ConfirmApprove()"}) | @Html.ActionLink("Reject", "Reject", new { id = item.UrlId }, new { onClick = "return ConfirmReject()" })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrlTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Url)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrlDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsApproved)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_Category.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_User.UserEmail)
+        </td>
+    </tr>
+}
+</table>
+
+}

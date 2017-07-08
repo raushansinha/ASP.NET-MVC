@@ -1,0 +1,10 @@
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\BOL.dll.config
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\BOL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\BOL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\EntityFramework.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\EntityFramework.SqlServer.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\EntityFramework.xml
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\bin\Debug\EntityFramework.SqlServer.xml
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\obj\Debug\BOL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\obj\Debug\BOL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache

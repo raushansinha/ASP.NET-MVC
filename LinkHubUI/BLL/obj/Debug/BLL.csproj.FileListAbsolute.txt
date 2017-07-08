@@ -1,0 +1,11 @@
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\BLL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\BLL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\BOL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\DAL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\EntityFramework.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\BOL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\DAL.pdb
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\bin\Debug\EntityFramework.xml
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\obj\Debug\BLL.dll
+C:\DATA\WORK\ASPNET MVC\LinkHubUI\BLL\obj\Debug\BLL.pdb

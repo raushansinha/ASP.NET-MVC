@@ -1,0 +1,32 @@
+List of task to perform
+1. Create Solution with all projects - Done
+2. Create BOL with Entity Framework - done
+3. Add connection string in UI - done
+4. Create Areas in MVC - Inprogress - Done
+	a. Common
+	b. User
+	c. Admin
+	d. Security
+5. Ceate all ontrollers in respective Area - Done
+6. Add default index views - Done
+7. Add Bootstrap - Done
+8. Create BrowseUrl Controller - Done
+9. Create BrowseUrl View - Done
+10. Create DAL - Completed
+	a. Add UrlDb - Completed
+11. Create BLL - Completed
+	a. Add UrlBs - Completed
+12. Update BrowseUrl Controller - Completed
+13. Update BrowseUrl View - Completed
+14. Sorting - Completed
+15. Pagind - Completed
+16. ListCategory, ListUser with sorting and paging - Inprogress
+16. Create SubmitUrl Contrl - Completed
+17. Form Validations in BOL for BrowseURL
+18. Add script for Client Side Validations
+19. Add tbl_UrlMetadata file in BOL
+20. Authentication Filter in Global File
+21. Authentication Project
+22. Adding required DLLs
+23. Creating Custome Membership Providers
+24. Creating Custome Role Providers
