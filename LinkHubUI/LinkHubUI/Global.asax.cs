@@ -13,6 +13,8 @@ namespace LinkHubUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //Secure app access
+            GlobalFilters.Filters.Add(new AuthorizeAttribute());
         }
     }
 }

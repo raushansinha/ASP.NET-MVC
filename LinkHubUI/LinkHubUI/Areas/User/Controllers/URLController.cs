@@ -8,6 +8,7 @@ using BLL;
 
 namespace LinkHubUI.Areas.User.Controllers
 {
+    [Authorize(Roles = "A,U")]
     public class URLController : BaseUserController
     {
        
@@ -26,6 +27,8 @@ namespace LinkHubUI.Areas.User.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    myUrl.UserId = objBs.userBs.GetAll().Where(x=>x.UserEmail == User.Identity.Name).FirstOrDefault().UserId;
+                    myUrl.IsApproved = "P";
                     objBs.urlBs.Insert(myUrl);
                     TempData["Msg"] = "Created Successfully";
                     return RedirectToAction("Index");

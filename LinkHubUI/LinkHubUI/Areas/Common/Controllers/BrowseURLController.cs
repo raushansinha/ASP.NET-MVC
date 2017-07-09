@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace LinkHubUI.Areas.Common.Controllers
 {
+    [AllowAnonymous]
     public class BrowseURLController : BaseCommonController
     {
         private double pageSize = 10.0;
