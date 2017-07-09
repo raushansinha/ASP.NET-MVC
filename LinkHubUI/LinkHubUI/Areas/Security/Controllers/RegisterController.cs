@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BOL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,30 @@ namespace LinkHubUI.Areas.Security.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(tbl_User user)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    user.Role = "U";
+                    objBs.userBs.Insert(user);
+                    TempData["Msg"] = "Registered Successfully";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View("Index");
+                }
+            }
+            catch (Exception e)
+            {
+                TempData["Msg"] = "Registration Failed: " + e.Message;
+                return RedirectToAction("Index");
+            }
         }
     }
 }

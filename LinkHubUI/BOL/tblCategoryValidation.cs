@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BOL
 {
-    public class tbl_CategoryValidation
+    public class tblCategoryValidation
     {
         [Required]
         public string CategoryName { get; set; }
@@ -16,7 +16,7 @@ namespace BOL
         public string CategoryDesc { get; set; }
     }
 
-    [MetadataType(typeof(tbl_CategoryValidation))]
+    [MetadataType(typeof(tblCategoryValidation))]
     public partial class tbl_Category
     { }
 }

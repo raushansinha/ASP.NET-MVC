@@ -23,7 +23,7 @@ namespace BOL
         }
     }
 
-    public class tbl_UrlValidation
+    public class tblUrlValidation
     {
         [Required]
         public string UrlTitle { get; set; }
@@ -37,7 +37,7 @@ namespace BOL
         public string UrlDesc { get; set; }
     }
 
-    [MetadataType(typeof(tbl_UrlValidation))]
+    [MetadataType(typeof(tblUrlValidation))]
     public partial class tbl_Url
     { }
 }
